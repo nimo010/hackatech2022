@@ -1,6 +1,6 @@
 import LayoutGeneral from "../../components/LayoutGeneral/LayoutGeneral";
 
-function HomePage() {
+function CrearReviewPage() {
 
   return (
     <LayoutGeneral>
@@ -8,4 +8,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default CrearReviewPage;
