@@ -10,7 +10,7 @@ const TextInput = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
   const [field, meta] = useField(props);
   const isBad = meta.touched && meta.error;
-
+  
   return (
     <div className="form-group">
       <label className="label-required" htmlFor={props.id}>

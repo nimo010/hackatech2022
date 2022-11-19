@@ -92,28 +92,6 @@
   font-size: var(--fs-md);
 }
 
-.mje-reserva {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  max-width: 450px;
-  font-size: 16px;
-  color: #B00020;
-  background-color: #ffbeb09a;
-  padding: 20px;
-  margin: 20px 20px 0 20px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-
-.mje-reserva i {
-  font-size: 28px;
-  margin-right: 8px;
-}
-
 @media (max-width: 768px) {
   .form-login {
     width: 346px;
