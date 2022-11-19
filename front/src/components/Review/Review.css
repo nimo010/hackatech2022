@@ -1,0 +1,21 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    width: 100%;
+    border: 2px solid var(--colorUno);
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+p{
+    padding-left: 10px;
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline;
+}
+span{
+    display: inline;
+    padding-left: 10px;
+    font-size: larger;
+}
