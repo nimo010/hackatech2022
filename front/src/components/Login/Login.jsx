@@ -68,12 +68,6 @@ const Login = () => {
 
   return (
     <div className="contenedor-login">
-      {history.location.state?.loginReserva !== undefined && (
-        <div className="mje-reserva">
-          <i className="fas fa-exclamation-circle"></i> Para realizar una
-          reserva necesita estar logueado
-        </div>
-      )}
       <Formik
         initialValues={{
           password: "",
@@ -81,12 +75,13 @@ const Login = () => {
         }}
         validationSchema={Yup.object({
           email: Yup.string()
-            .email("El email es inválido")
+            .email("El email tiene un formato inválido")
             .required("Este campo es obligatorio"),
           password: Yup.string()
             .min(6, "La contraseña debe tener más de 6 caracteres")
             .required("Este campo es obligatorio"),
         })}
+
         onSubmit={async (values) => {
           // Valores capturados del form
           const usuario = {
@@ -104,7 +99,7 @@ const Login = () => {
 
           try {
             // POST con los datos del usuario
-            const res = await fetch(`${BASE_URL}/auth/login`, settings);
+            const res = await fetch(`${BASE_URL}/login`, settings);
             const data = await res.json();
             if (data.jwt) {
               // Si devuelve un token lo guardo en Storage y Context
