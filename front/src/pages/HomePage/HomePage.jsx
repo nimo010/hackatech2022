@@ -1,5 +1,5 @@
 import LayoutGeneral from "../../components/LayoutGeneral/LayoutGeneral";
-import ListadoReviews from "../../components/ListadosReviews/ListadoReviews";
+import ListadoCarreras from "../../components/ListadoCarreras/ListadoCarreras";
 import "./HomePage.css";
 
 function HomePage() {
@@ -11,7 +11,7 @@ function HomePage() {
       <h2 className="sub-title">
         Leé que opinan de estas carreras los estudiantes que las cursan:
       </h2>
-      <ListadoReviews />
+      <ListadoCarreras />
     </LayoutGeneral>
   );
 }

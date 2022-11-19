@@ -1,11 +1,10 @@
 import LayoutGeneral from "../../components/LayoutGeneral/LayoutGeneral";
-import Reviews from "../../components/Review/Reviews";
-
+import ListadoReviews from "../../components/ListadoReviews/ListadoReviews";
 
 function CarreraPage() {
   return (
     <LayoutGeneral>
-      <Reviews />
+      <ListadoReviews />
     </LayoutGeneral>
   );
 }
