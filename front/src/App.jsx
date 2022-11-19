@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+
+import HomePage from './pages/HomePage/HomePage';
+
+function App() {
+  return (
+    <div className="App">
+      <HomePage />
+    </div>
+=======
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
@@ -26,6 +36,7 @@ function App() {
         <Route exact path="/not-found" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
+>>>>>>> 82ef06e697fbafb08354889f390b13ea300b136d
   );
 }
 
