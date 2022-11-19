@@ -25,15 +25,6 @@ function CrearReviewPage() {
         <Error info={"Error al cargar el producto"} />
       ) : (
         <>
-          <ProductoHeader />
-          <ProductoUbicacion />
-          <ProductoSocials />
-          <ProductoImagenes />
-          <ProductoDescripcion />
-          <ProductoCaracteristicas />
-          <ProductoDisponibilidad id={id_producto} />
-          <ProductoMapa />
-          <ProductoPoliticas />
         </>
       )}
     </LayoutGeneral>

@@ -1,10 +1,10 @@
 import LayoutGeneral from "../../components/LayoutGeneral/LayoutGeneral";
 
-function ReviewsPage() {
+function CarreraPage() {
   return (
     <LayoutGeneral>
     </LayoutGeneral>
   );
 }
 
-export default ReviewsPage;
+export default CarreraPage;
