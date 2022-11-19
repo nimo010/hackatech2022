@@ -17,6 +17,7 @@ function Header({ page }) {
   const linksDeInvitado = [
     ["/registro", "Crear cuenta"],
     ["/login", "Iniciar sesión"],
+    ["/crear-review", "Crear Review"]
   ];
   
   return (
