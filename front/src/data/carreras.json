@@ -1,9 +1,11 @@
 [
   {
+    "id": 1,
     "nombre": "Ingeniería en Sistemas",
     "universidad": "Universidad Tecnológica Nacional"
   },
   {
+    "id": 2,
     "nombre": "Ingeniería Química",
     "universidad": "Universidad Tecnológica Nacional"
   }

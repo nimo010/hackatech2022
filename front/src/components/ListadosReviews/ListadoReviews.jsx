@@ -1,12 +1,14 @@
-import React from 'react'
-import './ListadoReviews.css'
+import React from "react";
+import "./ListadoReviews.css";
+import carreras from "../../data/carreras.json";
+import CardCarrera from "../CardCarrera/CardCarrera";
 
 export default function ListadoReviews() {
   return (
-    <div className='card'>
-        <p>UNIVERSIDAD</p>
-        <p>CARRERA</p>
-        <img src='/'alt='foto'></img>
+    <div className="listado-reviews">
+      {carreras.map((carrera, idx) => (
+        <CardCarrera key={idx} carrera={carrera} />
+      ))}
     </div>
-  )
+  );
 }

@@ -1,15 +1,5 @@
-.card{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--colorUno);
-    border-radius: 20px;
-    background-color: whitesmoke;
-    flex: 1 1;
-    width: 400px;
-    align-items: center;
-    margin-top: 50px;
-}
-
-p{
-    padding: 10px 0;
+.listado-reviews{
+    padding: 10px 100px;
+    display: inline-flex;
+    gap: 40px;
 }
