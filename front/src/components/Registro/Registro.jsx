@@ -66,15 +66,15 @@ function Registro() {
     <div className="contenedor-registro">
       <Formik
         initialValues={{
-          firstName: "",
-          lastName: "",
+          userName: "",
           email: "",
           password: "",
           repassword: "",
+          universidad: "",
         }}
         validationSchema={Yup.object({
-          firstName: Yup.string().required("Este campo es obligatorio"),
-          lastName: Yup.string().required("Este campo es obligatorio"),
+          userName: Yup.string().required("Este campo es obligatorio"),
+          universidad: Yup.string().required("Este campo es obligatorio"),
           email: Yup.string()
             .email("El email es inválido")
             .required("Este campo es obligatorio"),
@@ -92,10 +92,10 @@ function Registro() {
         onSubmit={async (values) => {
           // Valores capturados del form
           const usuario = {
-            nombre: values.firstName,
-            apellido: values.lastName,
+            username: values.userName,
             email: values.email,
             contrasena: values.password,
+            universidad: values.universidad,
           };
 
           const settings = {
@@ -108,14 +108,14 @@ function Registro() {
 
           try {
             // POST con los datos del usuario
-            const res = await fetch(`${BASE_URL}/auth/nuevoUsuario`, settings);
+            const res = await fetch(`${BASE_URL}/registro`, settings);
             const data = await res.json();
 
             if (data.jwt) {
               // Si devuelve un token lo guardo en Storage y Context
               authenticate(data);
               // Redirección a Home
-              history.push("/registro-exitoso");
+              history.push("/login");
             } else {
               // Feedback de error
               setBadRequestMsg(data.message);
@@ -131,26 +131,26 @@ function Registro() {
 
           <div className="double-form-group">
             <TextInput
-              label="Nombre"
-              name="firstName"
+              label="Nombre de Usuario"
+              name="userName"
               type="text"
-              id="firstName"
-              placeholder="Ingrese su nombre"
+              id="userName"
+              placeholder="Ingrese su usuario"
             />
             <TextInput
-              label="Apellido"
-              name="lastName"
-              type="text"
-              id="lastName"
-              placeholder="Ingrese su apellido"
+              label="Correo Electrónico"
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Ingrese su correo electrónico"
             />
           </div>
           <TextInput
-            label="Correo Electrónico"
-            name="email"
-            type="email"
-            id="email"
-            placeholder="Ingrese su correo electrónico"
+            label="Universidad"
+            name="universidad"
+            type="text"
+            id="universidad"
+            placeholder="Ingrese su universidad"
           />
           <PasswordInput
             label="Contraseña"
