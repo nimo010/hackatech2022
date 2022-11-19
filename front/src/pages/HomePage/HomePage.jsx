@@ -4,6 +4,7 @@ function HomePage() {
 
   return (
     <LayoutGeneral>
+      
     </LayoutGeneral>
   );
 }
