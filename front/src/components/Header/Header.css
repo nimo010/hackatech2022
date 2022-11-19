@@ -96,12 +96,7 @@
 .btn-header-link:hover {
   color: #0f101b;
 }
-.logo{
-  color: var(--colorUno);
-  font-weight: 700;
-  font-size: 2rem;
-  padding-left: 35px;
-}
+
 @media handheld, screen and (max-width: 768px) {
   .logo-lema {
     display: none;
@@ -116,4 +111,10 @@
   .main-header__menu-hamburguesa {
     display: block;
   }
+}
+.logo{
+  color: var(--colorUno);
+  font-weight: 700;
+  font-size: 2rem;
+  padding-left: 35px;
 }
