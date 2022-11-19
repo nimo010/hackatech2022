@@ -21,7 +21,7 @@ function Header({ page }) {
   
   return (
     <header className="main-header">
-      <p>logo</p>
+      <p className="logo">UNIREVIEW</p>
 
       <nav className="main-header__navbar">
         <InvitadoLinks links={linksDeInvitado} page={page} />
